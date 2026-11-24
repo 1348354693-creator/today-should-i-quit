@@ -16,12 +16,27 @@ No resume upload or recruiter chat is required to run the check. This Skill does
 
 *"Should I Quit Today?" is lighthearted workplace humor. Public job data is provided for market reference only. It does not guarantee a raise or job offer, or predict the right time to quit. This Skill never reads your private Maimai data, relationship graph, cookies, or login credentials.*
 
-[![Release 下载量](https://img.shields.io/github/downloads/1348354693-creator/today-should-i-quit/total?label=Release%20%E4%B8%8B%E8%BD%BD&color=2ea44f)](https://github.com/1348354693-creator/today-should-i-quit/releases)
-[![GitHub Release](https://img.shields.io/github/v/release/1348354693-creator/today-should-i-quit?label=%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC)](https://github.com/1348354693-creator/today-should-i-quit/releases/latest)
+## 下载与收藏
 
-## 下载与安装
+<!-- metrics:start -->
+**[直接下载最新 Skill ZIP](https://github.com/1348354693-creator/today-should-i-quit/releases/download/v2.0.0/today-should-i-quit-v2.0.0.zip)**（v2.0.0，无需 GitHub 账号）
 
-推荐从 [Releases](https://github.com/1348354693-creator/today-should-i-quit/releases/latest) 下载最新的 `today-should-i-quit-v2.0.0.zip`，再在支持本地 Skill 导入的客户端中上传该 ZIP。
+在仓库右上角点击 **Star** 即可收藏，后续可以在自己的 GitHub Stars 中找到。
+
+| 指标 | 当前值 | 统计口径 |
+| --- | ---: | --- |
+| 收藏（Stars） | 0 | GitHub Stars |
+| Release 下载 | 2 | 所有 Release 附件累计请求次数 |
+| Forks | 0 | GitHub Forks |
+
+_每天自动更新一次，也可以在 Actions 中手动刷新。_
+<!-- metrics:end -->
+
+下载 ZIP 后，可以在支持本地 Skill 导入的客户端中直接上传。
+
+[查看访问量和克隆量](https://github.com/1348354693-creator/today-should-i-quit/graphs/traffic)（仅仓库所有者可见，GitHub 原生提供近 14 天数据）。
+
+## 从源码安装
 
 也可以克隆源码：
 
@@ -51,7 +66,7 @@ npm run test:cdn-live
 
 ## 统计口径
 
-- README 顶部的下载量统计 GitHub Release 附件的累计下载次数，不包含 GitHub 自动生成的源码 ZIP/TAR。
+- README 中的下载量统计 GitHub Release 附件的累计请求次数，不包含 GitHub 自动生成的源码 ZIP/TAR。
 - 仓库所有者可以在 `Insights -> Traffic` 查看近 14 天的克隆量和访问量；GitHub 不公开这组明细，也不长期保存完整历史。
 - GitHub 无法判断下载后是否完成安装，因此 Release 下载量只能作为安装兴趣的代理指标，不等于真实安装量或活跃用户数。
 

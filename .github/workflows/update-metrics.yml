@@ -1,0 +1,84 @@
+name: Update repository metrics
+
+on:
+  schedule:
+    - cron: "15 1 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-repository-metrics
+  cancel-in-progress: true
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Update README metrics
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require("fs");
+            const owner = context.repo.owner;
+            const repo = context.repo.repo;
+
+            const { data: repository } = await github.rest.repos.get({ owner, repo });
+            const releases = await github.paginate(
+              github.rest.repos.listReleases,
+              { owner, repo, per_page: 100 }
+            );
+
+            const published = releases.filter((release) => !release.draft);
+            const latest = published.find((release) => !release.prerelease) || published[0];
+            const zipAsset = latest?.assets.find((asset) => asset.name.endsWith(".zip"));
+            const downloads = published.reduce(
+              (total, release) => total + release.assets.reduce(
+                (releaseTotal, asset) => releaseTotal + asset.download_count,
+                0
+              ),
+              0
+            );
+
+            const downloadLine = zipAsset
+              ? `**[直接下载最新 Skill ZIP](${zipAsset.browser_download_url})**（${latest.tag_name}，无需 GitHub 账号）`
+              : `**[查看最新 Release](https://github.com/${owner}/${repo}/releases/latest)**`;
+
+            const block = [
+              "<!-- metrics:start -->",
+              downloadLine,
+              "",
+              "在仓库右上角点击 **Star** 即可收藏，后续可以在自己的 GitHub Stars 中找到。",
+              "",
+              "| 指标 | 当前值 | 统计口径 |",
+              "| --- | ---: | --- |",
+              `| 收藏（Stars） | ${repository.stargazers_count} | GitHub Stars |`,
+              `| Release 下载 | ${downloads} | 所有 Release 附件累计请求次数 |`,
+              `| Forks | ${repository.forks_count} | GitHub Forks |`,
+              "",
+              "_每天自动更新一次，也可以在 Actions 中手动刷新。_",
+              "<!-- metrics:end -->",
+            ].join("\n");
+
+            const readmePath = "README.md";
+            const source = fs.readFileSync(readmePath, "utf8");
+            const marker = /<!-- metrics:start -->[\s\S]*?<!-- metrics:end -->/;
+
+            if (!marker.test(source)) {
+              core.setFailed("README metrics markers were not found.");
+              return;
+            }
+
+            fs.writeFileSync(readmePath, source.replace(marker, block));
+
+      - name: Commit updated metrics
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add README.md
+          git diff --cached --quiet || git commit -m "chore: update repository metrics"
+          git push
