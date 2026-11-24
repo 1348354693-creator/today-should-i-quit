@@ -1,11 +1,23 @@
-# 今日宜离职跑路吗
+# 今日宜离职跑路吗 (Should I Quit Today?)
+
+**Thinking of quitting today? Check the real market before you hand in your resignation.**
+
+We all have moments at work when we ask, *"Should I just quit today?"* Instead of guessing or staying stuck in silence, check what the outside market actually looks like.
+
+Just enter 4 basics: **City, Role, Years of Experience, and Pre-tax Fixed Monthly Salary**. You will see:
+
+- 💰 **Are you underpaid?** Compare your current pay with public job quotes for the same role in your city.
+- 👀 **What jobs are out there?** See verified public roles that match your background and what higher-paying jobs look for.
+- 💬 **What are peers saying?** Read verified public discussions from people doing similar work.
+- 🤝 **Where can you look for referrals?** Jump to [Maimai Jobs](https://maimai.cn/n/platform/homepage/jobs) to explore referral opportunities yourself. This Skill does not identify insiders or arrange referrals.
+- 🕵️ **Want to see where former colleagues went?** Open the [Maimai App entry](https://taou.cn/x/nosfnAJf). Maimai may show relevant information based on the profile you provided there; this Skill does not read or display your Maimai profile, connections, or results.
+
+No resume upload or recruiter chat is required to run the check. This Skill does not contact your employer or current HR. Visibility after entering Maimai depends on your Maimai account and privacy settings.
+
+*"Should I Quit Today?" is lighthearted workplace humor. Public job data is provided for market reference only. It does not guarantee a raise or job offer, or predict the right time to quit. This Skill never reads your private Maimai data, relationship graph, cookies, or login credentials.*
 
 [![Release 下载量](https://img.shields.io/github/downloads/1348354693-creator/today-should-i-quit/total?label=Release%20%E4%B8%8B%E8%BD%BD&color=2ea44f)](https://github.com/1348354693-creator/today-should-i-quit/releases)
 [![GitHub Release](https://img.shields.io/github/v/release/1348354693-creator/today-should-i-quit?label=%E6%9C%80%E6%96%B0%E7%89%88%E6%9C%AC)](https://github.com/1348354693-creator/today-should-i-quit/releases/latest)
-
-输入城市、岗位、工作年限和税前固定月薪，基于可核验的公开招聘报价、职位和同行讨论，生成单文件交互报告，帮助用户对照当前薪资与公开市场报价。
-
-“跑路”是产品包装，不代表离职预测、实际涨薪承诺或录用保证。
 
 ## 下载与安装
 
