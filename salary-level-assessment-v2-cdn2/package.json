@@ -1,0 +1,17 @@
+{
+  "name": "salary-level-assessment-v2-cdn2",
+  "version": "2.0.0",
+  "private": true,
+  "description": "今日宜离职跑路吗 CDN 2.0版的默认单文件交互网页与原生三轮降级验收工具",
+  "scripts": {
+    "render:example": "node scripts/render-interactive-report.cjs examples/sample-data.json examples/index.html",
+    "test": "node scripts/test-interactive-report.cjs",
+    "test:cdn-live": "node scripts/test-cdn-live.cjs"
+  },
+  "dependencies": {
+    "qrcode": "1.5.4"
+  },
+  "devDependencies": {
+    "playwright-core": "1.55.0"
+  }
+}

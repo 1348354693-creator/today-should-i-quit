@@ -1,0 +1,717 @@
+<!doctype html>
+<html lang="zh-CN" data-ready="false">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>今日宜离职跑路吗</title>
+  <link rel="icon" href="data:,">
+  <style>:root {
+  color-scheme: light;
+  --canvas: #eef1f4;
+  --surface: #ffffff;
+  --ink: #172033;
+  --muted: #647083;
+  --line: #dfe4ea;
+  --blue: #1769e0;
+  --blue-soft: #eef5ff;
+  --red: #b43b43;
+  --shadow: 0 16px 42px rgba(25, 39, 57, 0.11);
+}
+
+* { box-sizing: border-box; }
+
+html {
+  min-width: 320px;
+  background: var(--canvas);
+  color: var(--ink);
+  font-family: "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", Arial, sans-serif;
+  letter-spacing: 0;
+}
+
+body { margin: 0; }
+button, a { font: inherit; }
+
+.shell {
+  width: min(920px, calc(100% - 32px));
+  margin: 24px auto 48px;
+}
+
+.report {
+  overflow: hidden;
+  border: 1px solid #d7dde5;
+  border-radius: 8px;
+  background: var(--surface);
+  box-shadow: var(--shadow);
+}
+
+.topbar {
+  min-height: 66px;
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--line);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.brand { min-width: 0; }
+.brand strong { display: block; font-size: 18px; line-height: 1.35; }
+.brand span { display: block; margin-top: 2px; color: var(--muted); font-size: 12px; }
+
+.status {
+  flex: 0 0 auto;
+  padding: 5px 9px;
+  border: 1px solid #c7d8f3;
+  border-radius: 4px;
+  color: #245ca7;
+  background: #f6f9ff;
+  font-size: 12px;
+}
+
+.chat {
+  min-height: calc(100vh - 140px);
+  padding: 22px;
+  background: #f7f8fa;
+}
+
+.message {
+  width: min(760px, 94%);
+  margin-bottom: 18px;
+  animation: enter 180ms ease-out both;
+}
+
+.message.user { margin-left: auto; }
+.message.assistant { margin-right: auto; }
+.speaker { margin: 0 0 5px; color: var(--muted); font-size: 12px; font-weight: 650; }
+.message.user .speaker { text-align: right; }
+
+.bubble {
+  padding: 15px 17px;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  background: var(--surface);
+  font-size: 15px;
+  line-height: 1.58;
+  overflow-wrap: anywhere;
+}
+
+.message.user .bubble { border-color: #cbdcf7; background: #eaf2ff; }
+.bubble h2 { margin: 0 0 11px; font-size: 19px; line-height: 1.38; }
+.bubble h3 { margin: 14px 0 7px; font-size: 15px; line-height: 1.45; }
+.bubble p { margin: 0 0 9px; }
+.bubble p:last-child { margin-bottom: 0; }
+
+.verdict {
+  margin-bottom: 11px;
+  padding: 10px 12px;
+  border-left: 4px solid var(--blue);
+  background: var(--blue-soft);
+}
+
+.verdict-label { color: var(--muted); font-size: 12px; }
+.verdict-value { margin-top: 2px; font-size: 18px; line-height: 1.35; font-weight: 780; }
+
+.metrics {
+  margin: 10px 0 12px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  border: 1px solid var(--line);
+  border-radius: 5px;
+  background: #fff;
+}
+
+.metric { min-width: 0; padding: 9px 10px; border-left: 1px solid var(--line); }
+.metric:first-child { border-left: 0; }
+.metric-label { min-height: 31px; color: var(--muted); font-size: 11px; line-height: 1.4; }
+.metric-value { margin-top: 2px; font-size: 17px; font-weight: 780; overflow-wrap: anywhere; }
+.negative { color: var(--red); }
+.salary-metrics { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+
+.requirements { margin: 7px 0 9px; padding-left: 20px; }
+.requirements li { margin: 4px 0; }
+
+.note, .branch-summary {
+  margin: 10px 0;
+  padding-left: 10px;
+  border-left: 3px solid #cfd6df;
+  color: #6e7988;
+  font-size: 12px;
+  line-height: 1.55;
+}
+
+.branch-summary strong { color: #425066; }
+
+.result-section { min-width: 0; }
+.result-section + .result-section,
+.continuation {
+  margin-top: 15px;
+  padding-top: 14px;
+  border-top: 1px solid var(--line);
+}
+
+.result-title { margin: 0 0 9px !important; }
+
+.result-action {
+  margin-top: 11px;
+  padding-top: 10px;
+  border-top: 1px solid var(--line);
+}
+
+.action-copy { margin: 0 0 4px !important; color: #485568; font-size: 13px; }
+.data-note { margin-top: 7px; color: var(--muted); font-size: 12px; line-height: 1.5; }
+
+.external-link, .text-link {
+  display: inline;
+  border: 0;
+  color: var(--blue);
+  background: transparent;
+  font-weight: 700;
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.external-link:hover, .text-link:hover { text-decoration: underline; }
+
+.app-entry-desktop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 14px;
+}
+
+.app-entry-content { min-width: 0; }
+.app-entry-copy { margin: 0 !important; color: #485568; font-size: 13px; }
+.app-entry-link { display: inline-block; margin-top: 4px; }
+.app-entry-qr {
+  width: 116px;
+  height: 116px;
+  flex: 0 0 116px;
+  object-fit: contain;
+  border: 1px solid var(--line);
+  background: #fff;
+}
+
+.choices {
+  margin-top: 12px;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 9px;
+}
+
+.choice {
+  min-height: 46px;
+  padding: 9px 11px;
+  border: 1px solid var(--blue);
+  border-radius: 5px;
+  color: var(--blue);
+  background: #fff;
+  cursor: pointer;
+  font-weight: 720;
+  line-height: 1.35;
+}
+
+.choice:hover { background: var(--blue-soft); }
+.choice.primary { color: #fff; background: var(--blue); }
+.choice.primary:hover { background: #0f57bd; }
+
+.post, .job { padding: 11px 0; border-top: 1px solid var(--line); }
+.post:first-of-type, .job:first-of-type { border-top: 0; }
+.post-title, .job-title { font-weight: 720; }
+.post a, .job a { display: inline-block; margin-top: 4px; color: var(--blue); text-decoration: none; }
+.job-meta { margin-top: 4px; color: var(--muted); font-size: 13px; }
+.job-requirement { margin-top: 6px !important; }
+
+.bubble h2.final-section-heading {
+  margin: 32px 0 16px;
+  padding-top: 24px;
+  border-top: 1px solid var(--line);
+}
+
+.final-card {
+  margin-top: 10px;
+  padding: 17px;
+  border: 1px solid #ccd5e0;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.final-card-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 16px;
+}
+
+.final-card-copy { min-width: 0; }
+.final-card-kicker { color: var(--muted); font-size: 11px; }
+.final-card-title { margin-top: 3px; font-size: 20px; font-weight: 800; }
+.final-card-conclusion { margin-top: 9px; color: #253145; }
+
+.diagnosis-section {
+  margin-top: 14px;
+  padding-top: 13px;
+  border-top: 1px solid var(--line);
+}
+
+.diagnosis-title { margin: 0 0 8px !important; font-size: 15px !important; }
+.diagnosis-copy { margin: 0 !important; color: #3e4a5f; font-size: 13px; }
+.former-note { margin: 0; color: var(--muted); font-size: 12px; line-height: 1.55; }
+
+@keyframes enter {
+  from { opacity: 0; transform: translateY(5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (max-width: 640px) {
+  .shell { width: 100%; margin: 0; }
+  .report { border: 0; border-radius: 0; box-shadow: none; }
+  .topbar { min-height: 62px; padding: 10px 14px; }
+  .brand strong { font-size: 16px; }
+  .chat { min-height: calc(100vh - 62px); padding: 13px; }
+  .message { width: 100%; margin-bottom: 14px; }
+  .bubble { padding: 13px; font-size: 14px; }
+  .bubble h2 { font-size: 17px; }
+  .verdict-value { font-size: 16px; }
+  .metric { padding: 8px 7px; }
+  .metric-label { font-size: 10px; }
+  .metric-value { font-size: 15px; }
+  .salary-metrics { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .salary-metrics .metric:nth-child(3) { border-left: 0; border-top: 1px solid var(--line); }
+  .salary-metrics .metric:nth-child(4) { border-top: 1px solid var(--line); }
+  .choices { grid-template-columns: 1fr; gap: 7px; }
+  .choice { min-height: 44px; padding: 8px; font-size: 13px; }
+  .final-card-head { display: block; }
+}
+
+@media (max-width: 360px) {
+  .topbar { align-items: flex-start; }
+  .brand span { max-width: 210px; }
+  .metrics { grid-template-columns: 1fr; }
+  .metric { border-left: 0; border-top: 1px solid var(--line); }
+  .metric:first-child { border-top: 0; }
+  .choices { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+  <main class="shell">
+    <section class="report" id="report" data-round="1" aria-label="薪资评估交互报告">
+      <header class="topbar">
+        <div class="brand">
+          <strong>今日宜离职跑路吗</strong>
+          <span>同岗报价、好岗与真话｜最多3轮</span>
+        </div>
+        <div class="status" id="roundStatus">第1轮</div>
+      </header>
+      <div class="chat" id="chat" aria-live="polite"></div>
+    </section>
+  </main>
+
+  <script id="report-data" type="application/json">{"schema_version":"2.0-cdn","run_id":"beijing-backend-5y-25k-cdn-20261110","generated_at":"2026-11-10","subject":{"city":"北京","role":"后端开发工程师","experience_years":5,"fixed_monthly_salary_yuan":25000},"salary_market":{"basis_type":"calculated_job_sample","average_monthly_yuan":48390,"range_min_yuan":18000,"range_max_yuan":85000,"sample_size":50,"high_salary_job_count":49,"data_period":"2026-11-10","data_scope_label":"当前公开职位快照","verified_at":"2026-11-10"},"result":{"headline":"你的当前月薪低于本次公开职位样本平均报价","salary_level":"当前月薪低于本次公开职位样本平均报价","position_label":"位于本次公开招聘报价区间的偏下位置","average_label":"本次公开职位样本平均报价","monthly_gap_yuan":-23390,"annual_equal_gap_yuan":-280680},"featured_job_ids":["-isIT7Wcv0z5SmS0G8Z8zg","0YgaZk6IjDu_5hKf7Gy6qQ","1XQaKzcuYYlkut5dnsXErA","8d9guasGYy_MsGeVkacJxA"],"branch_summaries":{"peer":"本次有三条发布时间和正文均完成核验的同行讨论；完整原帖可在同行分支查看。","jobs":"本次代表职位报价集中在35-85K，主要门槛是AI工程化、高并发分布式系统和云原生GPU平台；完整岗位可在岗位分支查看。"},"jobs":[{"id":"-isIT7Wcv0z5SmS0G8Z8zg","company":"某公司","title":"服务端开发-线上服务-全球top级ai公司-WLB","location":"北京 · 全部","salary_min_yuan":45000,"salary_max_yuan":75000,"salary_months":16,"experience":"3-5年","requirements":"高并发与分布式系统、数据库缓存消息队列，以及Rust、Go、Python或C++工程能力","date_posted":"2026-09-24","is_maimai":true,"source_url":"https://maimai.cn/n/job/geo/-isIT7Wcv0z5SmS0G8Z8zg"},{"id":"0YgaZk6IjDu_5hKf7Gy6qQ","company":"minimax","title":"后端工程师（计费与模型网关）","location":"北京 · 全部","salary_min_yuan":35000,"salary_max_yuan":65000,"salary_months":15,"experience":"3-5年","requirements":"计费与对账、模型网关、限流容错、可观测性和端到端交付经验","date_posted":"2026-10-09","is_maimai":true,"source_url":"https://maimai.cn/n/job/geo/0YgaZk6IjDu_5hKf7Gy6qQ"},{"id":"1XQaKzcuYYlkut5dnsXErA","company":"某公司","title":"云后端开发","location":"北京 · 全部","salary_min_yuan":50000,"salary_max_yuan":70000,"salary_months":16,"experience":"3-5年","requirements":"Kubernetes、GPU资源调度、训推引擎、MaaS网关和云平台可观测性","date_posted":"2026-10-19","is_maimai":true,"source_url":"https://maimai.cn/n/job/geo/1XQaKzcuYYlkut5dnsXErA"},{"id":"8d9guasGYy_MsGeVkacJxA","company":"小红书","title":"AI native应用-后端开发工程师","location":"北京 · 全部","salary_min_yuan":45000,"salary_max_yuan":85000,"salary_months":16,"experience":"3-5年","requirements":"AI创新业务后端、分布式并发、数据库中间件网关及AI Coding实践","date_posted":"2026-09-23","is_maimai":true,"source_url":"https://maimai.cn/n/job/geo/8d9guasGYy_MsGeVkacJxA"}],"high_salary_requirements":[{"title":"AI / Agent服务工程化","representative_job_ids":["0YgaZk6IjDu_5hKf7Gy6qQ","8d9guasGYy_MsGeVkacJxA"],"requirement":"模型网关、AI创新业务后端、AI Coding闭环及稳定服务交付经验。"},{"title":"高并发与分布式稳定性","representative_job_ids":["-isIT7Wcv0z5SmS0G8Z8zg","0YgaZk6IjDu_5hKf7Gy6qQ"],"requirement":"高并发服务、分布式系统、限流容错、数据库缓存和可观测性经验。"},{"title":"云原生GPU与MaaS平台","representative_job_ids":["1XQaKzcuYYlkut5dnsXErA"],"requirement":"Kubernetes、GPU资源调度、训推引擎、MaaS网关和云平台可观测性经验。"}],"discussions":[{"id":"tencent-salary-adjustment","summary":"腾讯5升6多数只涨1000-2000元，9升10却能涨5000-8000元，还可能增发15万-30万元股票：不同职级调薪差距能有多大？","is_maimai":true,"url":"https://maimai.cn/article/detail?efid=yvyBQRSXAQFWAr38F54y0A&fid=1882770129"},{"id":"backend-salary-inversion","summary":"5年以上后端在公司连涨3年仍被校招生薪资倒挂，外部初创却直接给出30%涨幅。","is_maimai":true,"url":"https://maimai.cn/community/gossip-detail/37050491?egid=623e5ad203ff4da9a58f8b770df2d022"},{"id":"chery-annual-bonus","summary":"5年以上后端聊到奇瑞薪资：通常约15薪，上一年度多数员工年终奖却超过3个月工资。","is_maimai":true,"url":"https://maimai.cn/community/gossip-detail/37053001?egid=b8b95b253643412197104a3c599a47e8"}],"ctas":{"salary_weekly":{"label":"在脉脉App查看完整薪资周报","url":"https://taou.cn/x/nosfnMiG"},"high_salary_jobs":{"label":"查看同城同岗高薪机会","url":"https://maimai.cn/n/platform/job-list"},"peer_discussions":{"label":"去脉脉社区看更多职场讨论","url":"https://maimai.cn/community/home/recommended"},"referral_network":{"label":"去脉脉找工作看内推机会","url":"https://maimai.cn/n/platform/homepage/jobs"},"former_colleagues":{"label":"在脉脉App查看前同事去向","url":"https://taou.cn/x/nosfnAJf"}}}</script>
+  <script>
+    (() => {
+      "use strict";
+
+      const data = JSON.parse(document.getElementById("report-data").textContent);
+      const salaryQrDataUri = "data:image/png;base64,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";
+      const formerColleaguesQrDataUri = "data:image/png;base64,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";
+      const chat = document.getElementById("chat");
+      const report = document.getElementById("report");
+      const roundStatus = document.getElementById("roundStatus");
+      const jobsById = new Map(data.jobs.map((job) => [job.id, job]));
+      const state = { round: 1, firstBranch: null, secondBranch: null, finished: false };
+
+      const create = (tag, className, text) => {
+        const node = document.createElement(tag);
+        if (className) node.className = className;
+        if (text !== undefined && text !== null) node.textContent = String(text);
+        return node;
+      };
+
+      const appendText = (parent, text, strong = false) => {
+        parent.appendChild(create(strong ? "strong" : "span", "", text));
+      };
+
+      const isHttps = (value) => {
+        try { return new URL(value).protocol === "https:"; }
+        catch { return false; }
+      };
+
+      const addLink = (parent, label, url, className = "") => {
+        if (!isHttps(url)) return null;
+        const link = create("a", className, label);
+        link.href = url;
+        parent.appendChild(link);
+        return link;
+      };
+
+      const addModuleLink = (parent, label, url) => {
+        const link = addLink(parent, label, url, "external-link");
+        if (link) link.dataset.role = "module-cta";
+        return link;
+      };
+
+      const addAppModuleEntry = (parent, key, label, url, qrDataUri, desktopCopy, qrAlt) => {
+        const desktop = create("div", "app-entry-desktop");
+        const content = create("div", "app-entry-content");
+        content.appendChild(create("p", "app-entry-copy", desktopCopy));
+        const link = addModuleLink(content, label, url);
+        if (link) link.classList.add("app-entry-link");
+        desktop.appendChild(content);
+        const qr = create("img", "app-entry-qr");
+        qr.src = qrDataUri;
+        qr.alt = qrAlt;
+        qr.dataset.entryKey = key;
+        desktop.appendChild(qr);
+        parent.appendChild(desktop);
+      };
+
+      const formatNumber = (value, digits = 1) => {
+        const rounded = Number(value.toFixed(digits));
+        return Number.isInteger(rounded) ? String(rounded) : rounded.toFixed(digits);
+      };
+
+      const formatK = (yuan, approximate = false, signed = false) => {
+        if (yuan === null || yuan === undefined) return "";
+        const value = yuan / 1000;
+        const prefix = signed && value > 0 ? "+" : "";
+        return `${approximate ? "约" : ""}${prefix}${formatNumber(value)}K`;
+      };
+
+      const formatAnnual = (yuan) => {
+        const value = yuan / 10000;
+        const prefix = value > 0 ? "+" : "";
+        return `${prefix}${formatNumber(value)}万元/年`;
+      };
+
+      const formatSalary = (job) => {
+        const base = `${formatNumber(job.salary_min_yuan / 1000)}-${formatNumber(job.salary_max_yuan / 1000)}K`;
+        return job.salary_months ? `${base}·${job.salary_months}薪` : base;
+      };
+
+      const formatGapRange = (job) => {
+        const current = data.subject.fixed_monthly_salary_yuan;
+        const low = job.salary_min_yuan - current;
+        const high = job.salary_max_yuan - current;
+        return `${formatK(low, false, true)}至${formatK(high, false, true)}`;
+      };
+
+      const subjectLine = () => {
+        const s = data.subject;
+        return `${s.city}｜${s.role}｜${s.experience_years}年｜税前固定月薪${formatK(s.fixed_monthly_salary_yuan)}`;
+      };
+
+      const message = (role, speaker, round) => {
+        const article = create("article", `message ${role}`);
+        article.dataset.round = String(round);
+        article.appendChild(create("div", "speaker", speaker));
+        const bubble = create("div", "bubble");
+        article.appendChild(bubble);
+        return { article, bubble };
+      };
+
+      const metric = (label, value, isNegative = false) => {
+        const item = create("div", "metric");
+        item.appendChild(create("div", "metric-label", label));
+        item.appendChild(create("div", `metric-value${isNegative ? " negative" : ""}`, value));
+        return item;
+      };
+
+      const addChoices = (parent, choices) => {
+        const box = create("div", "choices");
+        choices.forEach((choice, index) => {
+          const button = create("button", `choice${index === choices.length - 1 ? " primary" : ""}`, choice.label);
+          button.type = "button";
+          button.dataset.action = choice.action;
+          button.addEventListener("click", () => transition(choice.action));
+          box.appendChild(button);
+        });
+        parent.appendChild(box);
+      };
+
+      const renderUserInput = () => {
+        const item = message("user", "用户", 0);
+        item.bubble.textContent = `${data.subject.city}，${data.subject.role}，${data.subject.experience_years}年，税前固定月薪${formatK(data.subject.fixed_monthly_salary_yuan)}，不包含奖金、补贴、股票或其他收入。`;
+        chat.appendChild(item.article);
+      };
+
+      const renderRoundOne = () => {
+        const item = message("assistant", "Skill｜第1轮", 1);
+        item.article.id = "round1";
+        item.bubble.appendChild(create("h2", "", data.result.headline));
+
+        const salarySection = create("section", "result-section salary-position-section");
+        salarySection.dataset.module = "salary_weekly";
+        salarySection.appendChild(create("h3", "result-title", "今日在职性价比"));
+        const verdict = create("div", "verdict");
+        verdict.appendChild(create("div", "verdict-label", subjectLine()));
+        verdict.appendChild(create("div", "verdict-value", data.result.position_label));
+        salarySection.appendChild(verdict);
+
+        const metrics = create("div", "metrics salary-metrics");
+        metrics.appendChild(metric("当前固定月薪", formatK(data.subject.fixed_monthly_salary_yuan)));
+        metrics.appendChild(metric(data.result.average_label, formatK(data.salary_market.average_monthly_yuan, true)));
+        metrics.appendChild(metric("月薪参照差额", formatK(data.result.monthly_gap_yuan, true, true), data.result.monthly_gap_yuan < 0));
+        metrics.appendChild(metric("按12个月等额差额", formatAnnual(data.result.annual_equal_gap_yuan), data.result.annual_equal_gap_yuan < 0));
+        salarySection.appendChild(metrics);
+        salarySection.appendChild(create("div", "note", "以上为公开招聘报价参照，不代表实际涨薪或录用结果。"));
+        salarySection.appendChild(create("div", "data-note", `数据参考：${data.salary_market.data_scope_label}｜有效样本${data.salary_market.sample_size}个｜核验时间：${data.salary_market.verified_at}`));
+        const salaryAction = create("div", "result-action");
+        salaryAction.appendChild(create("p", "action-copy", "想知道同城同岗更完整的薪资分布和变化趋势？"));
+        addAppModuleEntry(
+          salaryAction,
+          "salary_weekly",
+          data.ctas.salary_weekly.label,
+          data.ctas.salary_weekly.url,
+          salaryQrDataUri,
+          "请使用手机扫码，在脉脉App内查看",
+          "脉脉完整薪资周报二维码"
+        );
+        salarySection.appendChild(salaryAction);
+        item.bubble.appendChild(salarySection);
+
+        const highSalarySection = create("section", "result-section high-salary-section");
+        highSalarySection.dataset.module = "high_salary_jobs";
+        highSalarySection.appendChild(create("h3", "result-title", "高薪的坑位都在挑什么人？"));
+        const list = create("ul", "requirements");
+        data.high_salary_requirements.slice(0, 3).forEach((requirement) => {
+          const li = create("li");
+          appendText(li, `${requirement.title}：`, true);
+          appendText(li, requirement.requirement);
+          list.appendChild(li);
+        });
+        highSalarySection.appendChild(list);
+        const highSalaryAction = create("div", "result-action");
+        highSalaryAction.appendChild(create("p", "action-copy", "对照这些要求，看看同城同岗有哪些职位正在给出更高报价。"));
+        addModuleLink(highSalaryAction, data.ctas.high_salary_jobs.label, data.ctas.high_salary_jobs.url);
+        highSalarySection.appendChild(highSalaryAction);
+        item.bubble.appendChild(highSalarySection);
+        if (state.round === 1) {
+          const continuation = create("section", "continuation");
+          continuation.appendChild(create("h3", "result-title", "带薪摸鱼1分钟，继续看看真话与好岗"));
+          addChoices(continuation, [
+            { label: "1 听同岗同行真话", action: "peer" },
+            { label: "2 看今日在招匹配好岗", action: "jobs" }
+          ]);
+          item.bubble.appendChild(continuation);
+        }
+        chat.appendChild(item.article);
+      };
+
+      const appendPeerContent = (bubble, full, round) => {
+        const section = create("section", "result-section peer-section");
+        section.dataset.module = "peer_discussions";
+        section.appendChild(create("h2", "", `${data.subject.role}同行近期的真实处境与真话`));
+        if (!full) {
+          const summary = create("div", "branch-summary");
+          appendText(summary, "同岗同行真话速览：", true);
+          appendText(summary, data.branch_summaries.peer);
+          section.appendChild(summary);
+        } else {
+          data.discussions.forEach((discussion, index) => {
+            const post = create("div", "post");
+            post.appendChild(create("div", "post-title", `${index + 1}. ${discussion.summary}`));
+            if (discussion.is_maimai) addLink(post, "查看原帖", discussion.url);
+            section.appendChild(post);
+          });
+        }
+        const action = create("div", "result-action peer-action");
+        addModuleLink(action, data.ctas.peer_discussions.label, data.ctas.peer_discussions.url);
+        section.appendChild(action);
+        bubble.appendChild(section);
+      };
+
+      const appendJobsContent = (bubble, full) => {
+        const section = create("section", "result-section jobs-section");
+        section.dataset.module = "referral_network";
+        section.appendChild(create("h2", "", "看今日在招匹配好岗"));
+        if (!full) {
+          const summary = create("div", "branch-summary");
+          appendText(summary, "今日在招匹配好岗速览：", true);
+          appendText(summary, data.branch_summaries.jobs);
+          section.appendChild(summary);
+        } else {
+          section.appendChild(create("p", "note", "以下只按城市、岗位和经验做初筛，具体技术与业务门槛需要结合你的真实经历逐项核对。"));
+          data.featured_job_ids.map((id) => jobsById.get(id)).filter(Boolean).forEach((job) => {
+            const card = create("div", "job");
+            card.appendChild(create("div", "job-title", `${job.company}｜${job.title}`));
+            card.appendChild(create("div", "job-meta", `${job.location}｜${formatSalary(job)}｜${job.experience}｜月薪区间参照差额${formatGapRange(job)}`));
+            card.appendChild(create("p", "job-requirement", `关键门槛：${job.requirements}`));
+            if (job.is_maimai) addLink(card, "查看岗位详情", job.source_url);
+            section.appendChild(card);
+          });
+        }
+        const action = create("div", "result-action referral-action");
+        action.appendChild(create("p", "action-copy", "想进一步接触这些高薪机会，可以去脉脉找工作看看内推机会。"));
+        addModuleLink(action, data.ctas.referral_network.label, data.ctas.referral_network.url);
+        section.appendChild(action);
+        bubble.appendChild(section);
+      };
+
+      const renderBranch = (branch, round, withFinal = false) => {
+        const item = message("assistant", `Skill｜第${round}轮`, round);
+        item.article.dataset.branch = branch;
+        if (branch === "peer") appendPeerContent(item.bubble, true, round);
+        else appendJobsContent(item.bubble, true);
+        if (withFinal) appendFinalCard(item.bubble);
+        else if (state.round === 2 && branch === "peer") {
+          addChoices(item.bubble, [
+            { label: "2 再看今日在招匹配好岗", action: "jobs-after-peer" },
+            { label: "3 生成今日跑路可行性诊断卡", action: "finish-from-peer" }
+          ]);
+        } else if (state.round === 2) {
+          addChoices(item.bubble, [
+            { label: "1 再听同岗同行真话", action: "peer-after-jobs" },
+            { label: "3 生成今日跑路可行性诊断卡", action: "finish-from-jobs" }
+          ]);
+        }
+        chat.appendChild(item.article);
+      };
+
+      const appendFinalCard = (bubble) => {
+        bubble.appendChild(create("h2", "final-section-heading", "今日跑路可行性诊断卡"));
+        const card = create("section", "final-card");
+        card.id = "finalCard";
+        const head = create("div", "final-card-head");
+        const copy = create("div", "final-card-copy");
+        copy.appendChild(create("div", "final-card-kicker", subjectLine()));
+        copy.appendChild(create("div", "final-card-title", "今日宜离职跑路吗？先看这份行情底牌"));
+        copy.appendChild(create("div", "final-card-conclusion", `${data.result.salary_level}；${data.result.position_label}。`));
+        head.appendChild(copy);
+        card.appendChild(head);
+
+        const salarySection = create("section", "diagnosis-section final-salary-section");
+        salarySection.dataset.module = "salary_weekly";
+        salarySection.appendChild(create("h3", "diagnosis-title", "今日在职性价比"));
+        const metrics = create("div", "metrics");
+        metrics.appendChild(metric("当前固定月薪", formatK(data.subject.fixed_monthly_salary_yuan)));
+        metrics.appendChild(metric(data.result.average_label, formatK(data.salary_market.average_monthly_yuan, true)));
+        metrics.appendChild(metric("月薪参照差额", formatK(data.result.monthly_gap_yuan, true, true), data.result.monthly_gap_yuan < 0));
+        salarySection.appendChild(metrics);
+        const salaryAction = create("div", "result-action");
+        addAppModuleEntry(
+          salaryAction,
+          "salary_weekly",
+          data.ctas.salary_weekly.label,
+          data.ctas.salary_weekly.url,
+          salaryQrDataUri,
+          "请使用手机扫码，在脉脉App内查看",
+          "脉脉完整薪资周报二维码"
+        );
+        salarySection.appendChild(salaryAction);
+        card.appendChild(salarySection);
+
+        const highSalarySection = create("section", "diagnosis-section");
+        highSalarySection.dataset.module = "high_salary_jobs";
+        highSalarySection.appendChild(create("h3", "diagnosis-title", "高薪坑位门槛"));
+        highSalarySection.appendChild(create("p", "diagnosis-copy", `高报价方向集中在：${data.high_salary_requirements.slice(0, 3).map((item) => item.title).join("、")}。`));
+        const highSalaryAction = create("div", "result-action");
+        addModuleLink(highSalaryAction, data.ctas.high_salary_jobs.label, data.ctas.high_salary_jobs.url);
+        highSalarySection.appendChild(highSalaryAction);
+        card.appendChild(highSalarySection);
+
+        const peerSection = create("section", "diagnosis-section");
+        peerSection.dataset.module = "peer_discussions";
+        peerSection.appendChild(create("h3", "diagnosis-title", "同岗同行真话"));
+        peerSection.appendChild(create("p", "diagnosis-copy", data.branch_summaries.peer));
+        const peerAction = create("div", "result-action");
+        addModuleLink(peerAction, data.ctas.peer_discussions.label, data.ctas.peer_discussions.url);
+        peerSection.appendChild(peerAction);
+        card.appendChild(peerSection);
+
+        const referralSection = create("section", "diagnosis-section");
+        referralSection.dataset.module = "referral_network";
+        referralSection.appendChild(create("h3", "diagnosis-title", "找同岗熟人内推"));
+        referralSection.appendChild(create("p", "diagnosis-copy", "想进一步接触这些高薪机会，可以去脉脉找工作看看内推机会。"));
+        const referralAction = create("div", "result-action");
+        addModuleLink(referralAction, data.ctas.referral_network.label, data.ctas.referral_network.url);
+        referralSection.appendChild(referralAction);
+        card.appendChild(referralSection);
+
+        const formerSection = create("section", "diagnosis-section");
+        formerSection.dataset.module = "former_colleagues";
+        formerSection.appendChild(create("h3", "diagnosis-title", "看看前同事去向"));
+        formerSection.appendChild(create("p", "former-note", "进入脉脉后，可根据你在脉脉填写的职场资料查看前同事去向；本 Skill 未读取你的脉脉资料，也不在站外预告具体人员、人数或平均薪资。"));
+        const formerAction = create("div", "result-action");
+        addAppModuleEntry(
+          formerAction,
+          "former_colleagues",
+          data.ctas.former_colleagues.label,
+          data.ctas.former_colleagues.url,
+          formerColleaguesQrDataUri,
+          "请使用手机扫码，在脉脉App内查看",
+          "脉脉前同事去向二维码"
+        );
+        formerSection.appendChild(formerAction);
+        card.appendChild(formerSection);
+        card.appendChild(create("div", "data-note", "恭喜完成今日“电子裸辞”体验！人可以先继续搬砖，心记得每天过来刷刷同岗新报价和好机会"));
+        bubble.appendChild(card);
+      };
+
+      const renderFinalOnly = (missingBranch) => {
+        const item = message("assistant", "Skill｜第3轮", 3);
+        item.article.dataset.branch = "final";
+        if (missingBranch === "peer") appendPeerContent(item.bubble, false, 3);
+        else appendJobsContent(item.bubble, false);
+        appendFinalCard(item.bubble);
+        chat.appendChild(item.article);
+      };
+
+      const render = () => {
+        chat.replaceChildren();
+        renderUserInput();
+        renderRoundOne();
+        if (state.firstBranch && state.round >= 2) renderBranch(state.firstBranch, 2, false);
+        if (state.round === 3 && state.secondBranch) renderBranch(state.secondBranch, 3, true);
+        else if (state.round === 3 && state.finished) renderFinalOnly(state.firstBranch === "peer" ? "jobs" : "peer");
+        report.dataset.round = String(state.round);
+        report.dataset.runId = data.run_id;
+        roundStatus.textContent = `第${state.round}轮`;
+        document.documentElement.dataset.ready = "true";
+        if (state.round > 1) {
+          requestAnimationFrame(() => {
+            const currentMessage = chat.querySelector(
+              `.message[data-round="${state.round}"]`
+            );
+            const scrollToCurrentMessage = () => {
+              currentMessage?.scrollIntoView({
+                behavior: "smooth",
+                block: "start"
+              });
+            };
+
+            if (currentMessage && getComputedStyle(currentMessage).animationName !== "none") {
+              currentMessage.addEventListener("animationend", scrollToCurrentMessage, { once: true });
+            } else {
+              scrollToCurrentMessage();
+            }
+          });
+        }
+      };
+
+      const transition = (action) => {
+        if (state.round === 1 && (action === "peer" || action === "jobs")) {
+          state.round = 2;
+          state.firstBranch = action;
+        } else if (state.round === 2 && action === "jobs-after-peer") {
+          state.round = 3;
+          state.secondBranch = "jobs";
+          state.finished = true;
+        } else if (state.round === 2 && action === "peer-after-jobs") {
+          state.round = 3;
+          state.secondBranch = "peer";
+          state.finished = true;
+        } else if (state.round === 2 && (action === "finish-from-peer" || action === "finish-from-jobs")) {
+          state.round = 3;
+          state.finished = true;
+        } else {
+          return;
+        }
+        render();
+      };
+
+      render();
+    })();
+  </script>
+</body>
+</html>

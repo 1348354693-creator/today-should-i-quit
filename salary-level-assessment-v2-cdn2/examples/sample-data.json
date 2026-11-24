@@ -1,0 +1,462 @@
+{
+  "schema_version": "2.0-cdn",
+  "run_id": "beijing-backend-5y-25k-cdn-20261110",
+  "generated_at": "2026-11-10",
+  "subject": {
+    "city": "北京",
+    "role": "后端开发工程师",
+    "experience_years": 5,
+    "fixed_monthly_salary_yuan": 25000
+  },
+  "salary_market": {
+    "basis_type": "calculated_job_sample",
+    "average_monthly_yuan": 48390,
+    "range_min_yuan": 18000,
+    "range_max_yuan": 85000,
+    "sample_size": 50,
+    "high_salary_job_count": 49,
+    "data_period": "2026-11-10",
+    "data_scope_label": "当前公开职位快照",
+    "verified_at": "2026-11-10"
+  },
+  "result": {
+    "headline": "你的当前月薪低于本次公开职位样本平均报价",
+    "salary_level": "当前月薪低于本次公开职位样本平均报价",
+    "position_label": "位于本次公开招聘报价区间的偏下位置",
+    "average_label": "本次公开职位样本平均报价",
+    "monthly_gap_yuan": -23390,
+    "annual_equal_gap_yuan": -280680
+  },
+  "featured_job_ids": [
+    "-isIT7Wcv0z5SmS0G8Z8zg",
+    "0YgaZk6IjDu_5hKf7Gy6qQ",
+    "1XQaKzcuYYlkut5dnsXErA",
+    "8d9guasGYy_MsGeVkacJxA"
+  ],
+  "branch_summaries": {
+    "peer": "本次有三条发布时间和正文均完成核验的同行讨论；完整原帖可在同行分支查看。",
+    "jobs": "本次代表职位报价集中在35-85K，主要门槛是AI工程化、高并发分布式系统和云原生GPU平台；完整岗位可在岗位分支查看。"
+  },
+  "jobs": [
+    {
+      "id": "-isIT7Wcv0z5SmS0G8Z8zg",
+      "source_id": "-isIT7Wcv0z5SmS0G8Z8zg",
+      "company": "某公司",
+      "title": "服务端开发-线上服务-全球top级ai公司-WLB",
+      "location": "北京 · 全部",
+      "salary_min_yuan": 45000,
+      "salary_max_yuan": 75000,
+      "salary_months": 16,
+      "experience": "3-5年",
+      "requirements": "高并发与分布式系统、数据库缓存消息队列，以及Rust、Go、Python或C++工程能力",
+      "date_posted": "2026-09-24",
+      "source_url": "https://maimai.cn/n/job/geo/-isIT7Wcv0z5SmS0G8Z8zg",
+      "is_maimai": true
+    },
+    {
+      "id": "0YgaZk6IjDu_5hKf7Gy6qQ",
+      "source_id": "0YgaZk6IjDu_5hKf7Gy6qQ",
+      "company": "minimax",
+      "title": "后端工程师（计费与模型网关）",
+      "location": "北京 · 全部",
+      "salary_min_yuan": 35000,
+      "salary_max_yuan": 65000,
+      "salary_months": 15,
+      "experience": "3-5年",
+      "requirements": "计费与对账、模型网关、限流容错、可观测性和端到端交付经验",
+      "date_posted": "2026-10-09",
+      "source_url": "https://maimai.cn/n/job/geo/0YgaZk6IjDu_5hKf7Gy6qQ",
+      "is_maimai": true
+    },
+    {
+      "id": "1XQaKzcuYYlkut5dnsXErA",
+      "source_id": "1XQaKzcuYYlkut5dnsXErA",
+      "company": "某公司",
+      "title": "云后端开发",
+      "location": "北京 · 全部",
+      "salary_min_yuan": 50000,
+      "salary_max_yuan": 70000,
+      "salary_months": 16,
+      "experience": "3-5年",
+      "requirements": "Kubernetes、GPU资源调度、训推引擎、MaaS网关和云平台可观测性",
+      "date_posted": "2026-10-19",
+      "source_url": "https://maimai.cn/n/job/geo/1XQaKzcuYYlkut5dnsXErA",
+      "is_maimai": true
+    },
+    {
+      "id": "8d9guasGYy_MsGeVkacJxA",
+      "source_id": "8d9guasGYy_MsGeVkacJxA",
+      "company": "小红书",
+      "title": "AI native应用-后端开发工程师",
+      "location": "北京 · 全部",
+      "salary_min_yuan": 45000,
+      "salary_max_yuan": 85000,
+      "salary_months": 16,
+      "experience": "3-5年",
+      "requirements": "AI创新业务后端、分布式并发、数据库中间件网关及AI Coding实践",
+      "date_posted": "2026-09-23",
+      "source_url": "https://maimai.cn/n/job/geo/8d9guasGYy_MsGeVkacJxA",
+      "is_maimai": true
+    }
+  ],
+  "high_salary_requirements": [
+    {
+      "title": "AI / Agent服务工程化",
+      "representative_job_ids": [
+        "0YgaZk6IjDu_5hKf7Gy6qQ",
+        "8d9guasGYy_MsGeVkacJxA"
+      ],
+      "requirement": "模型网关、AI创新业务后端、AI Coding闭环及稳定服务交付经验。"
+    },
+    {
+      "title": "高并发与分布式稳定性",
+      "representative_job_ids": [
+        "-isIT7Wcv0z5SmS0G8Z8zg",
+        "0YgaZk6IjDu_5hKf7Gy6qQ"
+      ],
+      "requirement": "高并发服务、分布式系统、限流容错、数据库缓存和可观测性经验。"
+    },
+    {
+      "title": "云原生GPU与MaaS平台",
+      "representative_job_ids": [
+        "1XQaKzcuYYlkut5dnsXErA"
+      ],
+      "requirement": "Kubernetes、GPU资源调度、训推引擎、MaaS网关和云平台可观测性经验。"
+    }
+  ],
+  "discussions": [
+    {
+      "id": "tencent-salary-adjustment",
+      "summary": "腾讯5升6多数只涨1000-2000元，9升10却能涨5000-8000元，还可能增发15万-30万元股票：不同职级调薪差距能有多大？",
+      "url": "https://maimai.cn/article/detail?efid=yvyBQRSXAQFWAr38F54y0A&fid=1882770129",
+      "is_maimai": true
+    },
+    {
+      "id": "backend-salary-inversion",
+      "summary": "5年以上后端在公司连涨3年仍被校招生薪资倒挂，外部初创却直接给出30%涨幅。",
+      "url": "https://maimai.cn/community/gossip-detail/37050491?egid=623e5ad203ff4da9a58f8b770df2d022",
+      "is_maimai": true
+    },
+    {
+      "id": "chery-annual-bonus",
+      "summary": "5年以上后端聊到奇瑞薪资：通常约15薪，上一年度多数员工年终奖却超过3个月工资。",
+      "url": "https://maimai.cn/community/gossip-detail/37053001?egid=b8b95b253643412197104a3c599a47e8",
+      "is_maimai": true
+    }
+  ],
+  "evidence_records": {
+    "jobs": [
+      {
+        "job_id": "-isIT7Wcv0z5SmS0G8Z8zg",
+        "acquisition_method": "maimai_cdn",
+        "dataset_url": "https://s.taou.com/n/platform/job-list.min.json?v=1794810803598",
+        "dataset_schema_version": 1,
+        "dataset_updated_at": "2026-11-06T09:52:02Z",
+        "source_platform": "脉脉",
+        "source_id": "-isIT7Wcv0z5SmS0G8Z8zg",
+        "source_url": "https://maimai.cn/n/job/geo/-isIT7Wcv0z5SmS0G8Z8zg",
+        "detail_url": "https://maimai.cn/n/job/geo/-isIT7Wcv0z5SmS0G8Z8zg",
+        "detail_verified": true,
+        "page_public_readable": true,
+        "company": "某公司",
+        "title": "服务端开发-线上服务-全球top级ai公司-WLB",
+        "location": "北京 · 全部",
+        "experience": "3-5年",
+        "salary_text": "45k-75k·16薪",
+        "salary_min_yuan": 45000,
+        "salary_max_yuan": 75000,
+        "salary_months": 16,
+        "description": "岗位职责\n\n负责线上服务相关的各类研发工作：\n\n1.负责数千万日活用户的大模型应用的架构设计与持续迭代。\n\n2.持续探索新技术，优化代码效率和资源占用、网络与数据库性能，保障服务的可靠性、可扩展性、可维护性。\n\n岗位要求\n\n1.具备扎实的计算机基础和编程能力，熟练掌握 Rust/Golang/Python/C++ 等至少一门编程语言。\n\n2.了解高并发、分布式系统基本概念，对数据库、缓存、消息队列、负载均衡等常用技术组件有落地经验。\n\n3.具备良好的学习能力和开拓创新精神，有责任心，积极主动，肯钻研。\n\n加分项\n\n1.有过大型复杂业务系统的开发经验。\n\n2.在大型开源软件中有深度贡献，或有优秀个人开源项目。",
+        "published_at": "2026-09-24T11:40:10+08:00",
+        "verified_at": "2026-11-10",
+        "selection_status": "selected",
+        "selection_reason": "CDN候选满足城市、岗位、相近经验和完整固定月薪区间要求，且公开详情字段完成同一性核验。",
+        "rejection_reason": "",
+        "same_job_verified": true,
+        "browser_login_required": false,
+        "browser_login_confirmed": false
+      },
+      {
+        "job_id": "0YgaZk6IjDu_5hKf7Gy6qQ",
+        "acquisition_method": "maimai_cdn",
+        "dataset_url": "https://s.taou.com/n/platform/job-list.min.json?v=1794810803598",
+        "dataset_schema_version": 1,
+        "dataset_updated_at": "2026-11-06T09:52:02Z",
+        "source_platform": "脉脉",
+        "source_id": "0YgaZk6IjDu_5hKf7Gy6qQ",
+        "source_url": "https://maimai.cn/n/job/geo/0YgaZk6IjDu_5hKf7Gy6qQ",
+        "detail_url": "https://maimai.cn/n/job/geo/0YgaZk6IjDu_5hKf7Gy6qQ",
+        "detail_verified": true,
+        "page_public_readable": true,
+        "company": "minimax",
+        "title": "后端工程师（计费与模型网关）",
+        "location": "北京 · 全部",
+        "experience": "3-5年",
+        "salary_text": "35k-65k·15薪",
+        "salary_min_yuan": 35000,
+        "salary_max_yuan": 65000,
+        "salary_months": 15,
+        "description": "负责账户、额度与账本、订阅计费和多模型网关，让每一次调用都算得清、扣得准、扛得住。\n职责\n- 设计并实现账户与工作区、额度与钱包、订阅与按量计费、对账与退款等核心服务。\n- 建设多模型路由与网关：模型目录、协议适配、流式响应、限流、失败回退与成本观测。\n- 保证计费链路幂等、一致、可追溯：每次调用都能关联到请求、模型、用量、成本与结算。\n- 与 SRE、QA 一起定义 SLO、监控与发布规范，处理线上故障并复盘。\n要求\n- 3 年以上服务端经验，熟练使用 Go、Node.js、Rust、Python 中的一种。\n- 有高并发服务，或交易、计费、订单系统的实战，能讲清幂等、对账、限流与故障恢复。\n- 重视可观测性与稳定性，能独立完成从设计到上线的端到端交付。\n- 熟练使用 Coding Agent 完成设计、实现与验证。\n加分：做过模型网关、API 平台或 AI Gateway；有开源基础设施经验。\n薪资与地点：35–65K/月 · 全职 · 上海浦东张江",
+        "published_at": "2026-10-09T10:08:08+08:00",
+        "verified_at": "2026-11-10",
+        "selection_status": "selected",
+        "selection_reason": "CDN候选满足城市、岗位、相近经验和完整固定月薪区间要求，且公开详情字段完成同一性核验。",
+        "rejection_reason": "",
+        "same_job_verified": true,
+        "browser_login_required": false,
+        "browser_login_confirmed": false
+      },
+      {
+        "job_id": "1XQaKzcuYYlkut5dnsXErA",
+        "acquisition_method": "maimai_cdn",
+        "dataset_url": "https://s.taou.com/n/platform/job-list.min.json?v=1794810803598",
+        "dataset_schema_version": 1,
+        "dataset_updated_at": "2026-11-06T09:52:02Z",
+        "source_platform": "脉脉",
+        "source_id": "1XQaKzcuYYlkut5dnsXErA",
+        "source_url": "https://maimai.cn/n/job/geo/1XQaKzcuYYlkut5dnsXErA",
+        "detail_url": "https://maimai.cn/n/job/geo/1XQaKzcuYYlkut5dnsXErA",
+        "detail_verified": true,
+        "page_public_readable": true,
+        "company": "某公司",
+        "title": "云后端开发",
+        "location": "北京 · 全部",
+        "experience": "3-5年",
+        "salary_text": "50k-70k·16薪",
+        "salary_min_yuan": 50000,
+        "salary_max_yuan": 70000,
+        "salary_months": 16,
+        "description": "职位描述\n1. 参与 AI 云平台的架构设计与核心模块开发，构建面向 GPU 异构算力的 IaaS/PaaS 底座，支撑大模型预训练、微调、推理以及 Agent 任务的规模化运行，兼顾内部研发与未来对外云服务交付。\n2. 基于 Kubernetes 生态做深度定制开发，实现 GPU 资源池化、拓扑感知调度、gang scheduling、多租户资源隔离、配额管理、任务排队与抢占；基于 CRD/Operator 实现训练 / 推理 / Agent 任务的全生命周期编排。\n3. 对接 vLLM、SGLang、DeepSpeed 等训推引擎，建设模型网关、统一 API、流式响应、路由、限流熔断、Token 计量、计费 / 配额模块，落地 MaaS 服务能力。\n4. 建设云平台可观测体系：指标、日志、链路追踪、硬件故障自动识别、告警与故障自愈，定位分布式集群、GPU、网络层面的复杂线上问题，提升集群利用率与服务 SLA。\n5. 和 Agent Harness 团队、训练框架团队、网络 / 存储基础设施团队协同，打通 Agent 任务在云平台上的资源调度、沙箱执行、环境管理闭环，支撑智能体大规模评测与运行。\n6. 构建 IaC、CI/CD 自动化交付体系，持续优化镜像分发、checkpoint 存储、数据缓存，降低大规模 AI 任务的部署成本与启动耗时。\n7. 参与云平台产品演进，沉淀云原生 AI 最佳实践，评估开源组件（Volcano、Ray、Kueue 等），必要时做二次开发或自研。\n\n任职要求\n1. 本科及以上，计算机、软件工程、分布式系统相关专业；3~6 年后端 / 云原生 / AI infra 研发经验。\n2. 熟练使用 Go/C++/Python 至少一门语言，扎实的分布式系统、Linux 内核、网络基础。\n3. 深入理解 Kubernetes 原理，有 client-go、CRD、Operator 开发实战经验；熟悉容器、服务网格、存储 / 网络插件。\n4. 有 GPU 集群、大模型训练 / 推理平台落地经验，理解 GPU 调度、显存、多机通信、AI 任务的资源特征。\n5. 良好的故障排查能力，能够定位分布式系统、硬件、软件栈跨层问题；自驱力强，能和算法团队紧密协作。\n\n加分项\n\n1. 参与过智算云、MaaS 平台、大模型云服务商业化落地，熟悉公有云 / 私有云 IaaS/PaaS 产品设计。\n2. 熟悉推理引擎（vLLM/SGLang）、训练框架（DeepSpeed/Megatron），理解 PagedAttention、连续批处理等推理优化机制。\n3. 有 Agent 平台、任务沙箱、Agent Harness 相关开发经验，理解 Agent 任务编排、环境隔离。\n4. 对 Ray、Volcano、Kubeflow、Fluid 等 AI 调度 / 存储开源项目有二次开发或贡献。\n5. 有大规模 GPU 集群运维、硬件故障自动化处理、算力成本优化经验。",
+        "published_at": "2026-10-19T16:00:07+08:00",
+        "verified_at": "2026-11-10",
+        "selection_status": "selected",
+        "selection_reason": "CDN候选满足城市、岗位、相近经验和完整固定月薪区间要求，且公开详情字段完成同一性核验。",
+        "rejection_reason": "",
+        "same_job_verified": true,
+        "browser_login_required": false,
+        "browser_login_confirmed": false
+      },
+      {
+        "job_id": "8d9guasGYy_MsGeVkacJxA",
+        "acquisition_method": "maimai_cdn",
+        "dataset_url": "https://s.taou.com/n/platform/job-list.min.json?v=1794810803598",
+        "dataset_schema_version": 1,
+        "dataset_updated_at": "2026-11-06T09:52:02Z",
+        "source_platform": "脉脉",
+        "source_id": "8d9guasGYy_MsGeVkacJxA",
+        "source_url": "https://maimai.cn/n/job/geo/8d9guasGYy_MsGeVkacJxA",
+        "detail_url": "https://maimai.cn/n/job/geo/8d9guasGYy_MsGeVkacJxA",
+        "detail_verified": true,
+        "page_public_readable": true,
+        "company": "小红书",
+        "title": "AI native应用-后端开发工程师",
+        "location": "北京 · 全部",
+        "experience": "3-5年",
+        "salary_text": "45k-85k·16薪",
+        "salary_min_yuan": 45000,
+        "salary_max_yuan": 85000,
+        "salary_months": 16,
+        "description": "工作职责：\n1、负责 AI 创新业务后端的核心功能设计与开发，支持业务快速迭代上线；\n2、与产品，设计，客户端团队紧密合作，交付稳定&高性能的后端服务；\n3、搭建稳定高效的后端服务架构，建立横向的后端服务能力；\n4、利用 AI Coding 工具，实现闭环的 AI Coding 开发流程，涵盖需求拆解，开发，测试，发布等;\n任职资格：\n1、本科及以上学历，计算机相关专业，具备3年以上服务端开发经验；\n2、精通Java/Golang/C++/Python 等后端编程语言；\n3、在生产环境中有数据库/中间件/网关/消息服务等模块的充足经验;\n4、 具备良好的后端架构能力，对于分布式/并发/线上监控/容器化等有充分的了解\n5、具备良好的沟通能力和团队合作精神，有较强的责任心和主动性；\n5、对 AI 产品和技术(如 Agent)有浓厚兴趣，愿意了解和钻研相关的业务和技术知识;\n加分项:\n1、有前端(react/vue)，客户端等跨职能开发经验;\n2、对 AI vibe coding 有一定的了解和实践;\n3、对于 AI Agent 相关的知识有过探索和实践(包括但不限于 MCP/A2A等)",
+        "published_at": "2026-09-23T17:35:38+08:00",
+        "verified_at": "2026-11-10",
+        "selection_status": "selected",
+        "selection_reason": "CDN候选满足城市、岗位、相近经验和完整固定月薪区间要求，且公开详情字段完成同一性核验。",
+        "rejection_reason": "",
+        "same_job_verified": true,
+        "browser_login_required": false,
+        "browser_login_confirmed": false
+      }
+    ],
+    "discussions": [
+      {
+        "discussion_id": "tencent-salary-adjustment",
+        "discovery_query": "https://maimai.cn/article/detail?efid=yvyBQRSXAQFWAr38F54y0A&fid=1882770129",
+        "discovery_method": "direct_url_revalidation",
+        "source_platform": "脉脉",
+        "source_url": "https://maimai.cn/article/detail?efid=yvyBQRSXAQFWAr38F54y0A&fid=1882770129",
+        "original_title": "鹅子发调薪1on1沟通推动邮件啦",
+        "is_maimai": true,
+        "public_readable": true,
+        "page_role": "高级猎头顾问",
+        "page_experience": null,
+        "page_date_text": "25-07-29",
+        "published_at": "2025-07-29",
+        "published_at_verified": true,
+        "sitemap_lastmod": null,
+        "content_category": "market_reference",
+        "matched_topics": [
+          "调薪",
+          "职级",
+          "股票增发"
+        ],
+        "content_evidence_source": "detail_body",
+        "used_unreadable_comments": false,
+        "decision_relevant": true,
+        "has_specific_signal": true,
+        "city_match": false,
+        "verified_at": "2026-10-14",
+        "verified_facts": [
+          "腾讯调薪结果",
+          "5升6多数涨薪1000-2000元",
+          "9升10多数涨薪5000-8000元",
+          "9升10还可能增发15万-30万元股票"
+        ],
+        "summary_claims": [
+          "腾讯",
+          "5升6",
+          "1000-2000元",
+          "9升10",
+          "5000-8000元",
+          "15万-30万元股票"
+        ],
+        "selection_status": "selected",
+        "selection_reason": "正文公开可读，完整发布日期已核验，包含明确职级调薪与股票数字。",
+        "rejection_reason": "",
+        "supports_question_hook": true,
+        "hook_basis": [
+          "原文同时披露了多个职级的调薪区间"
+        ],
+        "has_final_choice": false,
+        "has_explained_reason": false,
+        "has_systematic_method": false
+      },
+      {
+        "discussion_id": "backend-salary-inversion",
+        "discovery_query": "https://maimai.cn/community/gossip-detail/37050491?egid=623e5ad203ff4da9a58f8b770df2d022",
+        "discovery_method": "direct_url_revalidation",
+        "source_platform": "脉脉",
+        "source_url": "https://maimai.cn/community/gossip-detail/37050491?egid=623e5ad203ff4da9a58f8b770df2d022",
+        "original_title": "我来爆个料",
+        "is_maimai": true,
+        "public_readable": true,
+        "page_role": "后端开发",
+        "page_experience": "5年+",
+        "page_date_text": "06-21",
+        "published_at": "2026-06-21",
+        "published_at_verified": true,
+        "sitemap_lastmod": null,
+        "content_category": "same_role_pay",
+        "matched_topics": [
+          "薪资倒挂",
+          "跳槽",
+          "Offer涨幅"
+        ],
+        "content_evidence_source": "detail_body",
+        "used_unreadable_comments": false,
+        "decision_relevant": true,
+        "has_specific_signal": true,
+        "city_match": false,
+        "verified_at": "2026-10-14",
+        "verified_facts": [
+          "5年以上后端",
+          "在公司连涨3年仍被校招生薪资倒挂",
+          "外部初创给出30%涨幅"
+        ],
+        "summary_claims": [
+          "5年以上后端",
+          "连涨3年",
+          "校招生薪资倒挂",
+          "外部初创",
+          "30%涨幅"
+        ],
+        "selection_status": "selected",
+        "selection_reason": "页面正文的publish_time已核验为2026-06-21，岗位年限匹配且包含薪资倒挂和30%涨幅。",
+        "rejection_reason": "",
+        "supports_question_hook": false,
+        "hook_basis": [],
+        "has_final_choice": false,
+        "has_explained_reason": false,
+        "has_systematic_method": false
+      },
+      {
+        "discussion_id": "chery-annual-bonus",
+        "discovery_query": "https://maimai.cn/community/gossip-detail/37053001?egid=b8b95b253643412197104a3c599a47e8",
+        "discovery_method": "direct_url_revalidation",
+        "source_platform": "脉脉",
+        "source_url": "https://maimai.cn/community/gossip-detail/37053001?egid=b8b95b253643412197104a3c599a47e8",
+        "original_title": "我来爆个料",
+        "is_maimai": true,
+        "public_readable": true,
+        "page_role": "后端开发",
+        "page_experience": "5年+",
+        "page_date_text": "06-22",
+        "published_at": "2026-06-22",
+        "published_at_verified": true,
+        "sitemap_lastmod": null,
+        "content_category": "same_role_pay",
+        "matched_topics": [
+          "薪资结构",
+          "薪数",
+          "年终奖"
+        ],
+        "content_evidence_source": "detail_body",
+        "used_unreadable_comments": false,
+        "decision_relevant": true,
+        "has_specific_signal": true,
+        "city_match": false,
+        "verified_at": "2026-10-14",
+        "verified_facts": [
+          "5年以上后端聊到奇瑞薪资",
+          "奇瑞通常约15薪",
+          "上一年度多数员工年终奖超过3个月工资"
+        ],
+        "summary_claims": [
+          "5年以上后端聊到奇瑞薪资",
+          "15薪",
+          "上一年度",
+          "多数员工",
+          "年终奖",
+          "超过3个月工资"
+        ],
+        "selection_status": "selected",
+        "selection_reason": "页面正文的publish_time已核验为2026-06-22，岗位年限匹配且包含15薪和年终奖信息。",
+        "rejection_reason": "",
+        "supports_question_hook": false,
+        "hook_basis": [],
+        "has_final_choice": false,
+        "has_explained_reason": false,
+        "has_systematic_method": false
+      }
+    ],
+    "job_acquisition_summary": {
+      "acquisition_method": "maimai_cdn",
+      "dataset_url": "https://s.taou.com/n/platform/job-list.min.json?v=1794810803598",
+      "dataset_schema_version": 1,
+      "dataset_updated_at": "2026-11-06T09:52:02Z",
+      "dataset_job_count": 16021,
+      "filtered_candidate_count": 86,
+      "salary_sample_count": 50,
+      "detail_verified_count": 4,
+      "external_supplement_count": 0,
+      "verified_at": "2026-11-10"
+    }
+  },
+  "ctas": {
+    "salary_weekly": {
+      "label": "在脉脉App查看完整薪资周报",
+      "url": "https://taou.cn/x/nosfnMiG"
+    },
+    "high_salary_jobs": {
+      "label": "查看同城同岗高薪机会",
+      "url": "https://maimai.cn/n/platform/job-list"
+    },
+    "peer_discussions": {
+      "label": "去脉脉社区看更多职场讨论",
+      "url": "https://maimai.cn/community/home/recommended"
+    },
+    "referral_network": {
+      "label": "去脉脉找工作看内推机会",
+      "url": "https://maimai.cn/n/platform/homepage/jobs"
+    },
+    "former_colleagues": {
+      "label": "在脉脉App查看前同事去向",
+      "url": "https://taou.cn/x/nosfnAJf"
+    }
+  },
+  "evidence_summary": {
+    "salary_basis": "58个同城同岗相近经验的有效公开职位区间中点样本",
+    "salary_period": "2026-10-14",
+    "job_verified_at": "2026-10-14",
+    "discussion_count": 3
+  }
+}

@@ -1,0 +1,779 @@
+{
+  "generated_at": "2026-11-16T06:38:21.837Z",
+  "direct_file_open": true,
+  "state_paths": [
+    {
+      "name": "peer_to_final",
+      "viewport": "mobile",
+      "max_round": 3,
+      "first_round_height": 1049.140625,
+      "qr_targets": {
+        "salary_weekly": [
+          "https://taou.cn/x/nosfnMiG"
+        ],
+        "former_colleagues": [
+          "https://taou.cn/x/nosfnAJf"
+        ]
+      },
+      "overflow": {
+        "wide": false,
+        "offenders": [],
+        "scrollWidth": 390,
+        "innerWidth": 390
+      },
+      "scroll": {
+        "targetTop": 0.265625,
+        "scrollY": 1553,
+        "scrollHeight": 3076,
+        "viewportHeight": 844,
+        "remainingScroll": 679,
+        "finalCardTop": 312.125,
+        "finalCardBottom": 1481.640625
+      },
+      "separation": {
+        "headingText": "今日跑路可行性诊断卡",
+        "previousHasAction": true,
+        "previousToHeadingGap": 32,
+        "headingToCardGap": 16,
+        "marginTop": 32,
+        "marginBottom": 16,
+        "paddingTop": 24,
+        "borderTopStyle": "solid",
+        "borderTopWidth": 1,
+        "nextIsFinalCard": true
+      }
+    },
+    {
+      "name": "jobs_to_final",
+      "viewport": "mobile",
+      "max_round": 3,
+      "first_round_height": 1049.140625,
+      "qr_targets": {
+        "salary_weekly": [
+          "https://taou.cn/x/nosfnMiG"
+        ],
+        "former_colleagues": [
+          "https://taou.cn/x/nosfnAJf"
+        ]
+      },
+      "overflow": {
+        "wide": false,
+        "offenders": [],
+        "scrollWidth": 390,
+        "innerWidth": 390
+      },
+      "scroll": {
+        "targetTop": -0.46875,
+        "scrollY": 2067,
+        "scrollHeight": 3525,
+        "viewportHeight": 844,
+        "remainingScroll": 614,
+        "finalCardTop": 247.734375,
+        "finalCardBottom": 1417.25
+      },
+      "separation": {
+        "headingText": "今日跑路可行性诊断卡",
+        "previousHasAction": true,
+        "previousToHeadingGap": 32,
+        "headingToCardGap": 16,
+        "marginTop": 32,
+        "marginBottom": 16,
+        "paddingTop": 24,
+        "borderTopStyle": "solid",
+        "borderTopWidth": 1,
+        "nextIsFinalCard": true
+      }
+    },
+    {
+      "name": "peer_to_jobs_and_final",
+      "viewport": "mobile",
+      "max_round": 3,
+      "first_round_height": 1049.140625,
+      "qr_targets": {
+        "salary_weekly": [
+          "https://taou.cn/x/nosfnMiG"
+        ],
+        "former_colleagues": [
+          "https://taou.cn/x/nosfnAJf"
+        ]
+      },
+      "overflow": {
+        "wide": false,
+        "offenders": [],
+        "scrollWidth": 390,
+        "innerWidth": 390
+      },
+      "scroll": {
+        "targetTop": 0.265625,
+        "scrollY": 1553,
+        "scrollHeight": 3789,
+        "viewportHeight": 844,
+        "remainingScroll": 1392,
+        "finalCardTop": 1025.640625,
+        "finalCardBottom": 2195.15625
+      },
+      "separation": {
+        "headingText": "今日跑路可行性诊断卡",
+        "previousHasAction": true,
+        "previousToHeadingGap": 32,
+        "headingToCardGap": 16,
+        "marginTop": 32,
+        "marginBottom": 16,
+        "paddingTop": 24,
+        "borderTopStyle": "solid",
+        "borderTopWidth": 1,
+        "nextIsFinalCard": true
+      }
+    },
+    {
+      "name": "jobs_to_peer_and_final",
+      "viewport": "mobile",
+      "max_round": 3,
+      "first_round_height": 1049.140625,
+      "qr_targets": {
+        "salary_weekly": [
+          "https://taou.cn/x/nosfnMiG"
+        ],
+        "former_colleagues": [
+          "https://taou.cn/x/nosfnAJf"
+        ]
+      },
+      "overflow": {
+        "wide": false,
+        "offenders": [],
+        "scrollWidth": 390,
+        "innerWidth": 390
+      },
+      "scroll": {
+        "targetTop": -0.46875,
+        "scrollY": 2067,
+        "scrollHeight": 3789,
+        "viewportHeight": 844,
+        "remainingScroll": 878,
+        "finalCardTop": 511.640625,
+        "finalCardBottom": 1681.15625
+      },
+      "separation": {
+        "headingText": "今日跑路可行性诊断卡",
+        "previousHasAction": true,
+        "previousToHeadingGap": 32,
+        "headingToCardGap": 16,
+        "marginTop": 32,
+        "marginBottom": 16,
+        "paddingTop": 24,
+        "borderTopStyle": "solid",
+        "borderTopWidth": 1,
+        "nextIsFinalCard": true
+      }
+    },
+    {
+      "name": "peer_to_final",
+      "viewport": "narrow",
+      "max_round": 3,
+      "first_round_height": 1259.328125,
+      "qr_targets": {
+        "salary_weekly": [
+          "https://taou.cn/x/nosfnMiG"
+        ],
+        "former_colleagues": [
+          "https://taou.cn/x/nosfnAJf"
+        ]
+      },
+      "overflow": {
+        "wide": false,
+        "offenders": [],
+        "scrollWidth": 360,
+        "innerWidth": 360
+      },
+      "scroll": {
+        "targetTop": -0.09375,
+        "scrollY": 1787,
+        "scrollHeight": 3477,
+        "viewportHeight": 800,
+        "remainingScroll": 890,
+        "finalCardTop": 311.765625,
+        "finalCardBottom": 1649.1875
+      },
+      "separation": {
+        "headingText": "今日跑路可行性诊断卡",
+        "previousHasAction": true,
+        "previousToHeadingGap": 32,
+        "headingToCardGap": 16,
+        "marginTop": 32,
+        "marginBottom": 16,
+        "paddingTop": 24,
+        "borderTopStyle": "solid",
+        "borderTopWidth": 1,
+        "nextIsFinalCard": true
+      }
+    },
+    {
+      "name": "jobs_to_final",
+      "viewport": "narrow",
+      "max_round": 3,
+      "first_round_height": 1259.328125,
+      "qr_targets": {
+        "salary_weekly": [
+          "https://taou.cn/x/nosfnMiG"
+        ],
+        "former_colleagues": [
+          "https://taou.cn/x/nosfnAJf"
+        ]
+      },
+      "overflow": {
+        "wide": false,
+        "offenders": [],
+        "scrollWidth": 360,
+        "innerWidth": 360
+      },
+      "scroll": {
+        "targetTop": -0.28125,
+        "scrollY": 2277,
+        "scrollHeight": 3927,
+        "viewportHeight": 800,
+        "remainingScroll": 850,
+        "finalCardTop": 271.375,
+        "finalCardBottom": 1608.796875
+      },
+      "separation": {
+        "headingText": "今日跑路可行性诊断卡",
+        "previousHasAction": true,
+        "previousToHeadingGap": 32,
+        "headingToCardGap": 16,
+        "marginTop": 32,
+        "marginBottom": 16,
+        "paddingTop": 24,
+        "borderTopStyle": "solid",
+        "borderTopWidth": 1,
+        "nextIsFinalCard": true
+      }
+    },
+    {
+      "name": "peer_to_jobs_and_final",
+      "viewport": "narrow",
+      "max_round": 3,
+      "first_round_height": 1259.328125,
+      "qr_targets": {
+        "salary_weekly": [
+          "https://taou.cn/x/nosfnMiG"
+        ],
+        "former_colleagues": [
+          "https://taou.cn/x/nosfnAJf"
+        ]
+      },
+      "overflow": {
+        "wide": false,
+        "offenders": [],
+        "scrollWidth": 360,
+        "innerWidth": 360
+      },
+      "scroll": {
+        "targetTop": -0.09375,
+        "scrollY": 1787,
+        "scrollHeight": 4191,
+        "viewportHeight": 800,
+        "remainingScroll": 1604,
+        "finalCardTop": 1025.28125,
+        "finalCardBottom": 2362.703125
+      },
+      "separation": {
+        "headingText": "今日跑路可行性诊断卡",
+        "previousHasAction": true,
+        "previousToHeadingGap": 32,
+        "headingToCardGap": 16,
+        "marginTop": 32,
+        "marginBottom": 16,
+        "paddingTop": 24,
+        "borderTopStyle": "solid",
+        "borderTopWidth": 1,
+        "nextIsFinalCard": true
+      }
+    },
+    {
+      "name": "jobs_to_peer_and_final",
+      "viewport": "narrow",
+      "max_round": 3,
+      "first_round_height": 1259.328125,
+      "qr_targets": {
+        "salary_weekly": [
+          "https://taou.cn/x/nosfnMiG"
+        ],
+        "former_colleagues": [
+          "https://taou.cn/x/nosfnAJf"
+        ]
+      },
+      "overflow": {
+        "wide": false,
+        "offenders": [],
+        "scrollWidth": 360,
+        "innerWidth": 360
+      },
+      "scroll": {
+        "targetTop": -0.28125,
+        "scrollY": 2277,
+        "scrollHeight": 4191,
+        "viewportHeight": 800,
+        "remainingScroll": 1114,
+        "finalCardTop": 535.28125,
+        "finalCardBottom": 1872.703125
+      },
+      "separation": {
+        "headingText": "今日跑路可行性诊断卡",
+        "previousHasAction": true,
+        "previousToHeadingGap": 32,
+        "headingToCardGap": 16,
+        "marginTop": 32,
+        "marginBottom": 16,
+        "paddingTop": 24,
+        "borderTopStyle": "solid",
+        "borderTopWidth": 1,
+        "nextIsFinalCard": true
+      }
+    },
+    {
+      "name": "peer_to_final",
+      "viewport": "doubao-preview",
+      "max_round": 3,
+      "first_round_height": 965.046875,
+      "qr_targets": {
+        "salary_weekly": [
+          "https://taou.cn/x/nosfnMiG"
+        ],
+        "former_colleagues": [
+          "https://taou.cn/x/nosfnAJf"
+        ]
+      },
+      "overflow": {
+        "wide": false,
+        "offenders": [],
+        "scrollWidth": 520,
+        "innerWidth": 520
+      },
+      "scroll": {
+        "targetTop": 0.0625,
+        "scrollY": 1447,
+        "scrollHeight": 2860,
+        "viewportHeight": 900,
+        "remainingScroll": 513,
+        "finalCardTop": 272.796875,
+        "finalCardBottom": 1371.59375
+      },
+      "separation": {
+        "headingText": "今日跑路可行性诊断卡",
+        "previousHasAction": true,
+        "previousToHeadingGap": 32,
+        "headingToCardGap": 16,
+        "marginTop": 32,
+        "marginBottom": 16,
+        "paddingTop": 24,
+        "borderTopStyle": "solid",
+        "borderTopWidth": 1,
+        "nextIsFinalCard": true
+      }
+    },
+    {
+      "name": "jobs_to_final",
+      "viewport": "doubao-preview",
+      "max_round": 3,
+      "first_round_height": 965.0468139648438,
+      "qr_targets": {
+        "salary_weekly": [
+          "https://taou.cn/x/nosfnMiG"
+        ],
+        "former_colleagues": [
+          "https://taou.cn/x/nosfnAJf"
+        ]
+      },
+      "overflow": {
+        "wide": false,
+        "offenders": [],
+        "scrollWidth": 520,
+        "innerWidth": 520
+      },
+      "scroll": {
+        "targetTop": -0.4375,
+        "scrollY": 1836,
+        "scrollHeight": 3224,
+        "viewportHeight": 900,
+        "remainingScroll": 488,
+        "finalCardTop": 247.765625,
+        "finalCardBottom": 1346.5625
+      },
+      "separation": {
+        "headingText": "今日跑路可行性诊断卡",
+        "previousHasAction": true,
+        "previousToHeadingGap": 32,
+        "headingToCardGap": 16,
+        "marginTop": 32,
+        "marginBottom": 16,
+        "paddingTop": 24,
+        "borderTopStyle": "solid",
+        "borderTopWidth": 1,
+        "nextIsFinalCard": true
+      }
+    },
+    {
+      "name": "peer_to_jobs_and_final",
+      "viewport": "doubao-preview",
+      "max_round": 3,
+      "first_round_height": 965.0469360351562,
+      "qr_targets": {
+        "salary_weekly": [
+          "https://taou.cn/x/nosfnMiG"
+        ],
+        "former_colleagues": [
+          "https://taou.cn/x/nosfnAJf"
+        ]
+      },
+      "overflow": {
+        "wide": false,
+        "offenders": [],
+        "scrollWidth": 520,
+        "innerWidth": 520
+      },
+      "scroll": {
+        "targetTop": 0.0625,
+        "scrollY": 1447,
+        "scrollHeight": 3465,
+        "viewportHeight": 900,
+        "remainingScroll": 1118,
+        "finalCardTop": 878.5625,
+        "finalCardBottom": 1977.359375
+      },
+      "separation": {
+        "headingText": "今日跑路可行性诊断卡",
+        "previousHasAction": true,
+        "previousToHeadingGap": 32,
+        "headingToCardGap": 16,
+        "marginTop": 32,
+        "marginBottom": 16,
+        "paddingTop": 24,
+        "borderTopStyle": "solid",
+        "borderTopWidth": 1,
+        "nextIsFinalCard": true
+      }
+    },
+    {
+      "name": "jobs_to_peer_and_final",
+      "viewport": "doubao-preview",
+      "max_round": 3,
+      "first_round_height": 965.046875,
+      "qr_targets": {
+        "salary_weekly": [
+          "https://taou.cn/x/nosfnMiG"
+        ],
+        "former_colleagues": [
+          "https://taou.cn/x/nosfnAJf"
+        ]
+      },
+      "overflow": {
+        "wide": false,
+        "offenders": [],
+        "scrollWidth": 520,
+        "innerWidth": 520
+      },
+      "scroll": {
+        "targetTop": -0.4375,
+        "scrollY": 1836,
+        "scrollHeight": 3465,
+        "viewportHeight": 900,
+        "remainingScroll": 729,
+        "finalCardTop": 489.5625,
+        "finalCardBottom": 1588.359375
+      },
+      "separation": {
+        "headingText": "今日跑路可行性诊断卡",
+        "previousHasAction": true,
+        "previousToHeadingGap": 32,
+        "headingToCardGap": 16,
+        "marginTop": 32,
+        "marginBottom": 16,
+        "paddingTop": 24,
+        "borderTopStyle": "solid",
+        "borderTopWidth": 1,
+        "nextIsFinalCard": true
+      }
+    },
+    {
+      "name": "peer_to_final",
+      "viewport": "desktop",
+      "max_round": 3,
+      "first_round_height": 796.9844360351562,
+      "qr_targets": {
+        "salary_weekly": [
+          "https://taou.cn/x/nosfnMiG"
+        ],
+        "former_colleagues": [
+          "https://taou.cn/x/nosfnAJf"
+        ]
+      },
+      "overflow": {
+        "wide": false,
+        "offenders": [],
+        "scrollWidth": 1440,
+        "innerWidth": 1440
+      },
+      "scroll": {
+        "targetTop": -0.0625,
+        "scrollY": 1339,
+        "scrollHeight": 2755,
+        "viewportHeight": 1000,
+        "remainingScroll": 416,
+        "finalCardTop": 281.78125,
+        "finalCardBottom": 1310.890625
+      },
+      "separation": {
+        "headingText": "今日跑路可行性诊断卡",
+        "previousHasAction": true,
+        "previousToHeadingGap": 32,
+        "headingToCardGap": 16,
+        "marginTop": 32,
+        "marginBottom": 16,
+        "paddingTop": 24,
+        "borderTopStyle": "solid",
+        "borderTopWidth": 1,
+        "nextIsFinalCard": true
+      }
+    },
+    {
+      "name": "jobs_to_final",
+      "viewport": "desktop",
+      "max_round": 3,
+      "first_round_height": 796.984375,
+      "qr_targets": {
+        "salary_weekly": [
+          "https://taou.cn/x/nosfnMiG"
+        ],
+        "former_colleagues": [
+          "https://taou.cn/x/nosfnAJf"
+        ]
+      },
+      "overflow": {
+        "wide": false,
+        "offenders": [],
+        "scrollWidth": 1440,
+        "innerWidth": 1440
+      },
+      "scroll": {
+        "targetTop": -0.375,
+        "scrollY": 1695,
+        "scrollHeight": 3067,
+        "viewportHeight": 1000,
+        "remainingScroll": 372,
+        "finalCardTop": 238.34375,
+        "finalCardBottom": 1267.453125
+      },
+      "separation": {
+        "headingText": "今日跑路可行性诊断卡",
+        "previousHasAction": true,
+        "previousToHeadingGap": 32,
+        "headingToCardGap": 16,
+        "marginTop": 32,
+        "marginBottom": 16,
+        "paddingTop": 24,
+        "borderTopStyle": "solid",
+        "borderTopWidth": 1,
+        "nextIsFinalCard": true
+      }
+    },
+    {
+      "name": "peer_to_jobs_and_final",
+      "viewport": "desktop",
+      "max_round": 3,
+      "first_round_height": 796.984375,
+      "qr_targets": {
+        "salary_weekly": [
+          "https://taou.cn/x/nosfnMiG"
+        ],
+        "former_colleagues": [
+          "https://taou.cn/x/nosfnAJf"
+        ]
+      },
+      "overflow": {
+        "wide": false,
+        "offenders": [],
+        "scrollWidth": 1440,
+        "innerWidth": 1440
+      },
+      "scroll": {
+        "targetTop": -0.0625,
+        "scrollY": 1339,
+        "scrollHeight": 3295,
+        "viewportHeight": 1000,
+        "remainingScroll": 956,
+        "finalCardTop": 821.5625,
+        "finalCardBottom": 1850.671875
+      },
+      "separation": {
+        "headingText": "今日跑路可行性诊断卡",
+        "previousHasAction": true,
+        "previousToHeadingGap": 32,
+        "headingToCardGap": 16,
+        "marginTop": 32,
+        "marginBottom": 16,
+        "paddingTop": 24,
+        "borderTopStyle": "solid",
+        "borderTopWidth": 1,
+        "nextIsFinalCard": true
+      }
+    },
+    {
+      "name": "jobs_to_peer_and_final",
+      "viewport": "desktop",
+      "max_round": 3,
+      "first_round_height": 796.984375,
+      "qr_targets": {
+        "salary_weekly": [
+          "https://taou.cn/x/nosfnMiG"
+        ],
+        "former_colleagues": [
+          "https://taou.cn/x/nosfnAJf"
+        ]
+      },
+      "overflow": {
+        "wide": false,
+        "offenders": [],
+        "scrollWidth": 1440,
+        "innerWidth": 1440
+      },
+      "scroll": {
+        "targetTop": -0.375,
+        "scrollY": 1695,
+        "scrollHeight": 3295,
+        "viewportHeight": 1000,
+        "remainingScroll": 600,
+        "finalCardTop": 465.5625,
+        "finalCardBottom": 1494.671875
+      },
+      "separation": {
+        "headingText": "今日跑路可行性诊断卡",
+        "previousHasAction": true,
+        "previousToHeadingGap": 32,
+        "headingToCardGap": 16,
+        "marginTop": 32,
+        "marginBottom": 16,
+        "paddingTop": 24,
+        "borderTopStyle": "solid",
+        "borderTopWidth": 1,
+        "nextIsFinalCard": true
+      }
+    }
+  ],
+  "max_round": 3,
+  "shared_json": true,
+  "no_runtime_network": true,
+  "dynamic_json_rendering": true,
+  "sample_data_sha256": "083f364f46f6bf3f77c6c4459f04439003e715b49a03f926d553b8a5c9f7606c",
+  "module_cta_adjacency": true,
+  "one_cta_per_module": true,
+  "final_unified_link_area": false,
+  "action_visual_distinction": true,
+  "mobile_single_column": true,
+  "scroll_anchor_verified": true,
+  "round_message_top_range_px": [
+    0,
+    80
+  ],
+  "remaining_scroll_min_px": 80,
+  "default_html_delivery": true,
+  "html_only_user_file": false,
+  "native_markdown_links_after_html": [
+    {
+      "label": "在脉脉App查看完整薪资周报",
+      "url": "https://taou.cn/x/nosfnMiG"
+    },
+    {
+      "label": "查看同城同岗高薪机会",
+      "url": "https://maimai.cn/n/platform/job-list"
+    },
+    {
+      "label": "去脉脉社区看更多职场讨论",
+      "url": "https://maimai.cn/community/home/recommended"
+    },
+    {
+      "label": "去脉脉找工作看内推机会",
+      "url": "https://maimai.cn/n/platform/homepage/jobs"
+    },
+    {
+      "label": "在脉脉App查看前同事去向",
+      "url": "https://taou.cn/x/nosfnAJf"
+    }
+  ],
+  "native_fallback_only": true,
+  "same_tab_navigation": true,
+  "sources_hidden_from_public_html": true,
+  "strict_source_identity_and_allowlist": true,
+  "job_acquisition_policy": true,
+  "job_acquisition_priority": [
+    "maimai_cdn",
+    "maimai_public_page",
+    "maimai_detail_search",
+    "external_public_search"
+  ],
+  "job_acquisition_scenarios": [
+    "web_fetch_to_raw_http",
+    "cdn_failure_to_public_page",
+    "public_page_to_detail_search",
+    "maimai_insufficient_to_external",
+    "detail_identity_check",
+    "browser_qr_login"
+  ],
+  "example_job_acquisition": {
+    "acquisition_method": "maimai_cdn",
+    "dataset_url": "https://s.taou.com/n/platform/job-list.min.json?v=1794810803598",
+    "dataset_schema_version": 1,
+    "dataset_updated_at": "2026-11-06T09:52:02Z",
+    "dataset_job_count": 16021,
+    "filtered_candidate_count": 86,
+    "salary_sample_count": 50,
+    "detail_verified_count": 4,
+    "external_supplement_count": 0,
+    "verified_at": "2026-11-10"
+  },
+  "job_login_wait_ms": 90000,
+  "job_post_login_wait_ms": 20000,
+  "discussion_search_policy": true,
+  "discussion_render_counts": [
+    1,
+    2,
+    3
+  ],
+  "discussion_time_verification": true,
+  "discussion_salary_isolation": true,
+  "app_entries": {
+    "qr_visible_all_viewports": true,
+    "link_text_visible_all_viewports": true,
+    "decoded_all_viewports": true,
+    "rendered_size_px": 116
+  },
+  "fixed_links": [
+    "https://taou.cn/x/nosfnMiG",
+    "https://maimai.cn/n/platform/job-list",
+    "https://maimai.cn/community/home/recommended",
+    "https://maimai.cn/n/platform/homepage/jobs",
+    "https://taou.cn/x/nosfnAJf"
+  ],
+  "screenshots": {
+    "desktop": {
+      "path": "screenshots/desktop-round-3.png",
+      "width": 1440,
+      "height": 3295
+    },
+    "mobile": {
+      "path": "screenshots/mobile-round-3.png",
+      "width": 390,
+      "height": 3789
+    },
+    "mobile_round_one": {
+      "path": "screenshots/mobile-round-1.png",
+      "width": 390,
+      "height": 844
+    },
+    "final_card_handoff": {
+      "path": "screenshots/final-card-handoff.png",
+      "width": 1440,
+      "height": 1000
+    }
+  },
+  "responsive_overflow": false
+}

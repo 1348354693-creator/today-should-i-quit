@@ -1,0 +1,49 @@
+{
+  "checked_at": "2026-11-16T06:39:55.307Z",
+  "started_at": "2026-11-16T06:39:41.644Z",
+  "acquisition_method": "raw_http",
+  "timestamp_ms": 1794811181645,
+  "dataset_url": "https://s.taou.com/n/platform/job-list.min.json?v=1794811181645",
+  "http_status": 200,
+  "schema_version": 1,
+  "last_modified": "Sat, 14 Nov 2026 08:57:12 GMT",
+  "dataset_updated_at": "Sat, 14 Nov 2026 08:57:12 GMT",
+  "cdn_job_count": 29136,
+  "description_readable": true,
+  "webpage_declared_count": 29136,
+  "webpage_first_ids": [
+    "--CaYYkF0TvNRzFawLy6Eg",
+    "--JGhpbVO8926tB2AtSwWQ",
+    "--Zc59Xsrok0wmwt1WnkgQ"
+  ],
+  "cdn_first_ids": [
+    "--CaYYkF0TvNRzFawLy6Eg",
+    "--JGhpbVO8926tB2AtSwWQ",
+    "--Zc59Xsrok0wmwt1WnkgQ"
+  ],
+  "webpage_first_ids_exist_in_cdn": true,
+  "webpage_first_ids_order_matches": true,
+  "detail_verified_count": 2,
+  "details": [
+    {
+      "source_id": "--CaYYkF0TvNRzFawLy6Eg",
+      "detail_url": "https://maimai.cn/n/job/geo/--CaYYkF0TvNRzFawLy6Eg",
+      "title": "大模型推理优化工程师-高性能网络通信",
+      "company": "某公司",
+      "city": "北京",
+      "salary_text": "40k-60k·16薪",
+      "experience": "经验不限",
+      "published_at": "2026-10-16T17:29:45+08:00"
+    },
+    {
+      "source_id": "--JGhpbVO8926tB2AtSwWQ",
+      "detail_url": "https://maimai.cn/n/job/geo/--JGhpbVO8926tB2AtSwWQ",
+      "title": "FDE",
+      "company": "睿晟天和(北京)传媒科技有限公司",
+      "city": "深圳",
+      "salary_text": "18k-30k",
+      "experience": "5-10年",
+      "published_at": "2026-10-28T13:56:06+08:00"
+    }
+  ]
+}
