@@ -26,7 +26,7 @@ No resume upload or recruiter chat is required to run the check. This Skill does
 | 指标 | 当前值 | 统计口径 |
 | --- | ---: | --- |
 | 收藏（Stars） | 0 | GitHub Stars |
-| Release 下载 | 2 | 所有 Release 附件累计请求次数 |
+| Release 下载 | 7 | 所有 Release 附件累计请求次数 |
 | Forks | 0 | GitHub Forks |
 
 _每天自动更新一次，也可以在 Actions 中手动刷新。_
